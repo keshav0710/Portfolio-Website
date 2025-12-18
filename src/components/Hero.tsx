@@ -1,9 +1,13 @@
 import { Button } from '@/components/ui/button';
 import { Github, Linkedin, Mail } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
+import { useRef } from 'react';
+import VariableProximity from '@/components/ui/VariableProximity';
 
 const Hero = () => {
   const navigate = useNavigate();
+
+  const containerRef = useRef<HTMLDivElement>(null);
 
   const scrollToContact = () => {
     const element = document.querySelector('#contact');
@@ -31,10 +35,22 @@ const Hero = () => {
             Hi, I'm <span className="text-gradient">Keshav</span>
           </h1>
 
-          {/* Tagline */}
-          <p className="text-xl md:text-2xl text-muted-foreground mb-8 slide-in-right">
-            Building cool things with code 💻❤️
-          </p>
+          {/* Tagline with VariableProximity Effect */}
+          <div
+            ref={containerRef}
+            style={{ position: 'relative' }}
+            className="mb-8 slide-in-right"
+          >
+            <VariableProximity
+              label="Building cool things with code"
+              className="variable-proximity-demo text-xl md:text-2xl text-muted-foreground"
+              fromFontVariationSettings="'wght' 400, 'opsz' 9"
+              toFontVariationSettings="'wght' 900, 'opsz' 40"
+              containerRef={containerRef}
+              radius={150}
+              falloff="linear"
+            />
+          </div>
 
           {/* Description */}
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-12 bounce-in">
