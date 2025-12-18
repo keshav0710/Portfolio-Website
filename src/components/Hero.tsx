@@ -7,6 +7,11 @@ const Hero = () => {
     element?.scrollIntoView({ behavior: 'smooth' });
   };
 
+  const scrollToProjects = () => {
+    const element = document.querySelector('#projects');
+    element?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <section id="home" className="min-h-screen hero-gradient flex items-center justify-center pt-16">
       <div className="container mx-auto px-4 text-center">
@@ -30,21 +35,21 @@ const Hero = () => {
 
           {/* Description */}
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-12 bounce-in">
-            I'm a passionate developer who loves creating innovative solutions and 
+            I'm a passionate developer who loves creating innovative solutions and
             bringing ideas to life through clean, efficient code. Welcome to my digital playground!
           </p>
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12 bounce-in">
-            <Button 
-              size="lg" 
+            <Button
+              size="lg"
               onClick={scrollToContact}
               className="bg-primary hover:bg-primary-dark text-white px-8 py-3 text-lg shadow-primary hover-lift"
             >
               Let's Work Together ✨
             </Button>
-            <Button 
-              variant="outline" 
+            <Button
+              variant="outline"
               size="lg"
               onClick={() => window.open('#projects')}
               className="px-8 py-3 text-lg hover-bounce border-primary text-primary hover:bg-primary hover:text-white"

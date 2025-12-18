@@ -17,32 +17,42 @@ const Projects = () => {
   const projects: Project[] = [
     {
       id: 1,
-      title: "IOT APP",
-      description: "A beautiful IOT application with real-time data monitoring, device control, and user management. Built with React and Firebase.",
-      image: "",
+      title: "IOT Dashboard",
+      description: "A comprehensive IoT application featuring real-time sensor data monitoring, device control panels, and user management. Built with React, Firebase for real-time database, and modern UI components for an intuitive user experience.",
+      image: "🏠",
       tech: ["React", "Firebase", "Tailwind CSS", "TypeScript"],
-      github: "https://github.com/keshav0710/REACT-IOT",
-      demo: "https://react-iott.vercel.app/",
+      github: "https://github.com/keshav0710/AI-IOT-SMART-HOME",
+      demo: "https://homex-ai.vercel.app/",
       featured: true
     },
     {
       id: 2,
-      title: "🛒 E-Commerce Platform",
-      description: "Full-stack e-commerce solution with payment integration, inventory management, and admin dashboard.",
-      image: "🛒",
-      tech: ["Next.js", "Stripe", "MongoDB", "TypeScript"],
-      github: "https://github.com",
-      demo: "https://demo.com",
+      title: "Habitos",
+      description: "A comprehensive habit tracking application featuring an integrated focus timer, progress visualization, and goal management. Designed to help users build lasting routines and improve productivity.",
+      image: "⏱️",
+      tech: ["React-Native", "Firebase", "TypeScript"],
+      github: "https://github.com/keshav0710",
+      demo: "https://github.com/keshav0710",
       featured: true
     },
     {
       id: 3,
-      title: "PORTFOLIO",
-      description: "My personal portfolio showcasing my projects, skills, and experience.",
-      image: "📱",
-      tech: ["React", "Next.js", "Tailwind CSS", "TypeScript"],
-      github: "https://github.com",
-      demo: "https://demo.com",
+      title: "Developer Portfolio",
+      description: "Modern, responsive portfolio website showcasing projects, skills, and achievements. Features smooth animations, dark mode toggle, scroll progress indicator, and downloadable resume. Built with performance and SEO in mind.",
+      image: "💼",
+      tech: ["React", "TypeScript", "Tailwind CSS", "Vite"],
+      github: "https://github.com/keshav0710",
+      demo: "https://github.com/keshav0710",
+      featured: false
+    },
+    {
+      id: 4,
+      title: "Pdf Reader",
+      description: "An intelligent PDF reader that allows users to upload documents and ask questions about their content. Built using RAG (Retrieval-Augmented Generation) with Ollama for local LLM inference and Streamlit.",
+      image: "🤖",
+      tech: ["Rag", "Python", "Ollama", "Streamlit"],
+      github: "https://github.com/keshav0710",
+      demo: "https://github.com/keshav0710",
       featured: false
     },
   ];
@@ -69,8 +79,8 @@ const Projects = () => {
             </h3>
             <div className="grid md:grid-cols-2 gap-8">
               {projects.filter(p => p.featured).map((project, index) => (
-                <Card 
-                  key={project.id} 
+                <Card
+                  key={project.id}
                   className={`card-gradient shadow-card hover-lift border-0 ${index % 2 === 0 ? 'slide-in-left' : 'slide-in-right'}`}
                 >
                   <CardHeader>
@@ -122,8 +132,8 @@ const Projects = () => {
             <h3 className="text-2xl font-bold mb-8">More Projects</h3>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {projects.filter(p => !p.featured).map((project, index) => (
-                <Card 
-                  key={project.id} 
+                <Card
+                  key={project.id}
                   className={`card-gradient shadow-card hover-lift border-0 bounce-in`}
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
@@ -178,11 +188,11 @@ const Projects = () => {
 
           {/* View All Projects Button */}
           <div className="text-center mt-12">
-            <Button 
-              variant="outline" 
+            <Button
+              variant="outline"
               size="lg"
               className="hover-bounce border-primary text-primary hover:bg-primary hover:text-white"
-              onClick={() => window.open('https://github.com', '_blank')}
+              onClick={() => window.open('https://github.com/keshav0710', '_blank')}
             >
               View All Projects on GitHub →
             </Button>

@@ -13,22 +13,29 @@ const Skills = () => {
     { name: 'Python', icon: '🐍', level: 80, category: 'Languages' },
     { name: 'C++', icon: '⚡', level: 80, category: 'Languages' },
     { name: 'JavaScript', icon: '🚀', level: 70, category: 'Languages' },
-    
+    { name: 'TypeScript', icon: '💙', level: 70, category: 'Languages' },
+    { name: 'ReactNative', icon: '📱', level: 70, category: 'Languages' },
+
     // Frontend
-    { name: 'React', icon: '⚛️', level: 95, category: 'Frontend' },
-    { name: 'Next.js', icon: '🔺', level: 85, category: 'Frontend' },
-    { name: 'Tailwind CSS', icon: '🎨', level: 92, category: 'Frontend' },
+    { name: 'React', icon: '⚛️', level: 70, category: 'Frontend' },
+    { name: 'Tailwind CSS', icon: '🎨', level: 80, category: 'Frontend' },
     { name: 'HTML/CSS', icon: '🌐', level: 95, category: 'Frontend' },
-    
+
     // Backend
-    { name: 'Node.js', icon: '🟢', level: 88, category: 'Backend' },
-    { name: 'Express', icon: '🚄', level: 85, category: 'Backend' },
-    
+    { name: 'Node.js', icon: '🟢', level: 75, category: 'Backend' },
+    { name: 'Express', icon: '🚄', level: 75, category: 'Backend' },
+    { name: 'REST APIs', icon: '🔌', level: 75, category: 'Backend' },
+
     // Database & Tools
     { name: 'Firebase', icon: '🔥', level: 90, category: 'Database' },
-    { name: 'MongoDB', icon: '🍃', level: 85, category: 'Database' },
     { name: 'MySQL', icon: '🐘', level: 80, category: 'Database' },
     { name: 'Git', icon: '📚', level: 92, category: 'Tools' },
+    { name: 'VS Code', icon: '💻', level: 95, category: 'Tools' },
+  ];
+
+  const learningSkills = [
+    { name: 'Kubernetes', icon: '☸️', description: 'Container orchestration' },
+    { name: 'AWS', icon: '☁️', description: 'Cloud infrastructure' },
   ];
 
   const categories = ['Languages', 'Frontend', 'Backend', 'Database', 'Tools'];
@@ -71,10 +78,10 @@ const Skills = () => {
                     {category}
                   </span>
                 </h3>
-                
+
                 <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
                   {getSkillsByCategory(category).map((skill, index) => (
-                    <Card 
+                    <Card
                       key={skill.name}
                       className="card-gradient shadow-card hover-lift border-0 bounce-in"
                       style={{ animationDelay: `${(categoryIndex * 0.2) + (index * 0.1)}s` }}
@@ -84,10 +91,10 @@ const Skills = () => {
                           {skill.icon}
                         </div>
                         <h4 className="font-semibold mb-2">{skill.name}</h4>
-                        
+
                         {/* Skill Level Bar */}
                         <div className="w-full bg-muted rounded-full h-2 mb-2">
-                          <div 
+                          <div
                             className="bg-gradient-to-r from-primary to-secondary h-2 rounded-full transition-all duration-1000 ease-out"
                             style={{ width: `${skill.level}%` }}
                           />
@@ -102,7 +109,29 @@ const Skills = () => {
           </div>
 
           {/* Currently Learning Section */}
-   
+          <div className="mt-16 fade-in">
+            <h3 className="text-2xl font-bold mb-8 text-center">
+              <span className="text-gradient">Currently Learning 🌱</span>
+            </h3>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+              {learningSkills.map((skill, index) => (
+                <Card
+                  key={skill.name}
+                  className="card-gradient shadow-card hover-lift border-0 bounce-in"
+                  style={{ animationDelay: `${index * 0.1}s` }}
+                >
+                  <CardContent className="p-6 text-center">
+                    <div className="text-4xl mb-3 hover-bounce">
+                      {skill.icon}
+                    </div>
+                    <h4 className="font-semibold mb-2">{skill.name}</h4>
+                    <p className="text-sm text-muted-foreground">{skill.description}</p>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </div>
+
         </div>
       </div>
     </section>

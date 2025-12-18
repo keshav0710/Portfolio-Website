@@ -33,19 +33,17 @@ const About = () => {
             <div className="slide-in-right text-left">
               <div className="space-y-6">
                 <p className="text-lg text-muted-foreground leading-relaxed">
-                  Hey there! I'm Keshav, a passionate developer who believes that great code 
-                  can change the world. With a love for both frontend beauty and backend logic, 
-                  I enjoy crafting digital experiences that are both functional and delightful.
-                </p>
-                
-                <p className="text-lg text-muted-foreground leading-relaxed">
-                  When I'm not coding, you'll find me exploring new technologies, contributing 
-                  to open source projects, or probably debugging something that "worked fine yesterday" 😄
+                  Hi, I’m Keshav Toshniwal — a developer who enjoys turning ideas into real, working products.
+                  I’m currently a final-year ECE student, but honestly, my heart lies more in software development than core electronics.
                 </p>
 
                 <p className="text-lg text-muted-foreground leading-relaxed">
-                  I believe in writing clean, maintainable code and creating solutions that 
-                  not only solve problems but make people's lives a little bit easier and more enjoyable.
+                  I work with React, React Native, Firebase, and Node.js, and I love building things like mobile apps, web dashboards, and real-time systems.
+                  Mera focus sirf code likhne pe nahi hota — I care about how users actually use the product.
+                </p>
+
+                <p className="text-lg text-muted-foreground leading-relaxed">
+                  I’ve built projects ranging from smart home automation systems (IoT + Firebase) to productivity and habit-tracking apps. In most projects, I handle everything end-to-end — UI, logic, backend integration, and deployment.
                 </p>
 
                 {/* Fun Facts */}
@@ -54,11 +52,11 @@ const About = () => {
                   <ul className="space-y-2 text-muted-foreground">
                     <li className="flex items-center">
                       <span className="text-primary mr-2">🎯</span>
-                      I debug with console.log more than I care to admit
+                      I’m an ECE student who enjoys debugging JavaScript more than circuits ⚡💻
                     </li>
                     <li className="flex items-center">
                       <span className="text-secondary mr-2">☕</span>
-                      Coffee-driven development is my specialty
+                      I learn faster by building projects than watching tutorials — code first, Google later.
                     </li>
                     <li className="flex items-center">
                       <span className="text-accent mr-2">🌱</span>
