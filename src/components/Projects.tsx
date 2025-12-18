@@ -41,8 +41,8 @@ const Projects = () => {
       description: "Modern, responsive portfolio website showcasing projects, skills, and achievements. Features smooth animations, dark mode toggle, scroll progress indicator, and downloadable resume. Built with performance and SEO in mind.",
       image: "💼",
       tech: ["React", "TypeScript", "Tailwind CSS", "Vite"],
-      github: "https://github.com/keshav0710",
-      demo: "https://github.com/keshav0710",
+      github: "https://github.com/keshav0710/Portfolio-Website",
+      demo: "https://portfolio-delta-rosy-trvjtepvmg.vercel.app/",
       featured: false
     },
     {
