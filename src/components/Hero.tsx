@@ -1,7 +1,10 @@
 import { Button } from '@/components/ui/button';
 import { Github, Linkedin, Mail } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 const Hero = () => {
+  const navigate = useNavigate();
+
   const scrollToContact = () => {
     const element = document.querySelector('#contact');
     element?.scrollIntoView({ behavior: 'smooth' });
@@ -51,7 +54,7 @@ const Hero = () => {
             <Button
               variant="outline"
               size="lg"
-              onClick={() => window.open('#projects')}
+              onClick={() => navigate('/gallery')}
               className="px-8 py-3 text-lg hover-bounce border-primary text-primary hover:bg-primary hover:text-white"
             >
               View My Work
