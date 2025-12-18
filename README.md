@@ -1,73 +1,132 @@
-# Welcome to your Lovable project
+# Keshav Toshniwal - Portfolio
 
-## Project info
+A modern, responsive portfolio website built with React, TypeScript, and Tailwind CSS.
 
-**URL**: https://lovable.dev/projects/5504c6c6-8bc1-4c1f-ba10-3a0b4a4bf4f8
+## 🚀 Features
 
-## How can I edit this code?
+- **Responsive Design** - Works seamlessly on desktop, tablet, and mobile devices
+- **Dark Mode** - Toggle between light and dark themes
+- **Smooth Animations** - Engaging animations and transitions throughout
+- **Modern UI** - Built with shadcn/ui components and Tailwind CSS
+- **Fast Performance** - Optimized with Vite for lightning-fast builds
+- **SEO Friendly** - Proper meta tags and semantic HTML
 
-There are several ways of editing your application.
+## 🛠️ Technologies Used
 
-**Use Lovable**
+- **React 18** - Modern React with hooks
+- **TypeScript** - Type-safe code
+- **Vite** - Next-generation frontend tooling
+- **Tailwind CSS** - Utility-first CSS framework
+- **shadcn/ui** - Beautiful, accessible component library
+- **Lucide React** - Icon library
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/5504c6c6-8bc1-4c1f-ba10-3a0b4a4bf4f8) and start prompting.
+## 📦 Installation
 
-Changes made via Lovable will be committed automatically to this repo.
+### Prerequisites
 
-**Use your preferred IDE**
+- Node.js (v16 or higher)
+- npm or yarn
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Setup
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+```bash
+# Clone the repository
+git clone <your-repo-url>
 
-Follow these steps:
+# Navigate to project directory
+cd PORTFOLIO
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+# Install dependencies
+npm install
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Start development server
 npm run dev
+
+# Build for production
+npm run build
+
+# Preview production build
+npm run preview
 ```
 
-**Edit a file directly in GitHub**
+## 📁 Project Structure
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+```
+PORTFOLIO/
+├── public/              # Static assets
+├── src/
+│   ├── components/      # React components
+│   │   ├── ui/         # shadcn/ui components
+│   │   ├── Hero.tsx
+│   │   ├── About.tsx
+│   │   ├── Projects.tsx
+│   │   ├── Skills.tsx
+│   │   ├── Resume.tsx
+│   │   ├── Achievements.tsx
+│   │   ├── Testimonials.tsx
+│   │   ├── Contact.tsx
+│   │   ├── Navbar.tsx
+│   │   ├── Footer.tsx
+│   │   ├── BackToTop.tsx
+│   │   └── ScrollProgress.tsx
+│   ├── hooks/          # Custom React hooks
+│   ├── lib/            # Utility functions
+│   ├── App.tsx         # Main app component
+│   ├── index.css       # Global styles
+│   └── main.tsx        # App entry point
+├── index.html
+├── package.json
+├── tailwind.config.ts
+├── tsconfig.json
+└── vite.config.ts
+```
 
-**Use GitHub Codespaces**
+## 🎨 Customization
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+### Colors
 
-## What technologies are used for this project?
+The color scheme can be customized in `src/index.css`. The portfolio uses a warm, modern theme with:
+- Primary: Purple (#8B5CF6)
+- Secondary: Orange (#FF6B35)
+- Accent: Teal (#0EA5E9)
 
-This project is built with:
+### Content
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Update the following files to customize content:
+- `src/components/Hero.tsx` - Hero section with intro
+- `src/components/About.tsx` - About me section
+- `src/components/Projects.tsx` - Project showcase
+- `src/components/Skills.tsx` - Skills and technologies
+- `src/components/Contact.tsx` - Contact information
 
-## How can I deploy this project?
+## 📝 Scripts
 
-Simply open [Lovable](https://lovable.dev/projects/5504c6c6-8bc1-4c1f-ba10-3a0b4a4bf4f8) and click on Share -> Publish.
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+- `npm run lint` - Run ESLint
 
-## Can I connect a custom domain to my Lovable project?
+## 🌐 Deployment
 
-Yes, you can!
+This project can be deployed to:
+- Vercel
+- Netlify
+- GitHub Pages
+- Any static hosting service
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+Simply run `npm run build` and deploy the `dist` folder.
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+## 📄 License
+
+MIT License - feel free to use this template for your own portfolio!
+
+## 👨‍💻 Author
+
+**Keshav Toshniwal**
+- GitHub: [@keshav0710](https://github.com/keshav0710)
+- LinkedIn: [Keshav Toshniwal](https://linkedin.com/in/keshav-toshniwal-7b5b44253)
+- Email: kavyatosh@gmail.com
+
+---
+
+Made with ❤️ and lots of ☕ by Keshav
