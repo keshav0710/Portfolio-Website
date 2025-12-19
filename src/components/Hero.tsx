@@ -35,7 +35,7 @@ const Hero = () => {
           <Shuffle
             text="Hello I'm Keshav"
             shuffleDirection="right"
-            duration={0.35}
+            duration={0.75}
             animationMode="evenodd"
             shuffleTimes={2}
             ease="power3.out"
