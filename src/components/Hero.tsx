@@ -3,6 +3,7 @@ import { Github, Linkedin, Mail } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import { useRef } from 'react';
 import VariableProximity from '@/components/ui/VariableProximity';
+import Shuffle from '@/components/ui/Shuffle';
 
 const Hero = () => {
   const navigate = useNavigate();
@@ -25,15 +26,27 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto">
           {/* Profile Image Placeholder */}
           <div className="mb-8 fade-in">
-            <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-br from-primary to-secondary shadow-primary mb-6 flex items-center justify-center text-4xl font-bold text-white">
+            <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-br from-primary via-secondary to-accent shadow-primary mb-6 flex items-center justify-center text-5xl font-bold text-white">
               K
             </div>
           </div>
 
           {/* Main Heading */}
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 slide-in-left">
-            Hi, I'm <span className="text-gradient">Keshav</span>
-          </h1>
+          <Shuffle
+            text="Hello I'm Keshav"
+            shuffleDirection="right"
+            duration={0.35}
+            animationMode="evenodd"
+            shuffleTimes={2}
+            ease="power3.out"
+            stagger={0.03}
+            threshold={0.1}
+            triggerOnce={true}
+            triggerOnHover={true}
+            respectReducedMotion={true}
+            className="text-5xl md:text-7xl font-bold mb-6 slide-in-left text-gradient"
+
+          />
 
           {/* Tagline with VariableProximity Effect */}
           <div
