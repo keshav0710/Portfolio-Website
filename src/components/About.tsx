@@ -38,36 +38,20 @@ const About = () => {
                 </p>
 
                 <p className="text-lg text-muted-foreground leading-relaxed">
-                  I work with React, React Native, Firebase, and Node.js, and I love building things like mobile apps, web dashboards, and real-time systems.
-                  Mera focus sirf code likhne pe nahi hota — I care about how users actually use the product.
+                  Currently in my final year of ECE, but my real interest has always been software—specifically frontend and real-time systems. I've spent the last few years building mobile apps, IoT dashboards, and productivity tools, mostly end-to-end: UI, logic, backend, deployment.
                 </p>
 
                 <p className="text-lg text-muted-foreground leading-relaxed">
-                  I’ve built projects ranging from smart home automation systems (IoT + Firebase) to productivity and habit-tracking apps. In most projects, I handle everything end-to-end — UI, logic, backend integration, and deployment.
+                  I work primarily with React, React Native, Firebase, and TypeScript. I care about how users interact with what I build, so I focus on performance, responsiveness, and clean interfaces. I don't just ship features—I ship experiences that feel right.
                 </p>
 
-                {/* Fun Facts */}
-                <div className="bg-card rounded-xl p-6 shadow-card mt-8">
-                  <h3 className="text-xl font-semibold mb-4 text-primary">Fun Facts About Me:</h3>
-                  <ul className="space-y-2 text-muted-foreground">
-                    <li className="flex items-center">
-                      <span className="text-primary mr-2">🎯</span>
-                      I’m an ECE student who enjoys debugging JavaScript more than circuits ⚡💻
-                    </li>
-                    <li className="flex items-center">
-                      <span className="text-secondary mr-2">☕</span>
-                      I learn faster by building projects than watching tutorials — code first, Google later.
-                    </li>
-                    <li className="flex items-center">
-                      <span className="text-accent mr-2">🌱</span>
-                      Always learning something new in tech
-                    </li>
-                    <li className="flex items-center">
-                      <span className="text-primary mr-2">💪</span>
-                      Turning "it's impossible" into "it's deployed"
-                    </li>
-                  </ul>
-                </div>
+                <p className="text-lg text-muted-foreground leading-relaxed">
+                  Most of my learning happens by building. I'll take on a project, hit roadblocks, figure it out, and come out knowing something new. That's how I learned real-time Firebase sync, React Native navigation, and RAG-based AI systems.
+                </p>
+
+                <p className="text-lg text-muted-foreground leading-relaxed font-semibold">
+                  I'm looking for SDE or frontend roles where I can work on user-facing products, contribute to real-world systems, and keep learning from people better than me.
+                </p>
               </div>
             </div>
           </div>

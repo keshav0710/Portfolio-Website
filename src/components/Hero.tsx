@@ -42,7 +42,7 @@ const Hero = () => {
             className="mb-8 slide-in-right"
           >
             <VariableProximity
-              label="Building cool things with code"
+              label="I build real-time web apps and IoT dashboards that people actually use"
               className="variable-proximity-demo text-xl md:text-2xl text-muted-foreground"
               fromFontVariationSettings="'wght' 400, 'opsz' 9"
               toFontVariationSettings="'wght' 900, 'opsz' 40"
@@ -54,8 +54,7 @@ const Hero = () => {
 
           {/* Description */}
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-12 bounce-in">
-            I'm a passionate developer who loves creating innovative solutions and
-            bringing ideas to life through clean, efficient code. Welcome to my digital playground!
+            Full-stack developer specializing in React, TypeScript, and Firebase. I turn complex requirements into clean interfaces and scalable systems—from smart home automation to productivity tools.
           </p>
 
           {/* CTA Buttons */}
@@ -65,7 +64,7 @@ const Hero = () => {
               onClick={scrollToContact}
               className="bg-primary hover:bg-primary-dark text-white px-8 py-3 text-lg shadow-primary hover-lift"
             >
-              Let's Work Together ✨
+              Open to SDE and Frontend roles—let's talk
             </Button>
             <Button
               variant="outline"
