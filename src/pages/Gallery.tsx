@@ -39,6 +39,27 @@ const Gallery = () => {
             demo: "https://portfolio-delta-rosy-trvjtepvmg.vercel.app/",
             category: "Web Development"
         },
+        {
+            title: "HabitOS",
+            description: "Cross-platform habit tracker with integrated focus timer and real-time sync. Built custom Firebase authentication and offline-first architecture. Focus timer persists in background, ensuring uninterrupted productivity sessions across devices.",
+            screenshots: [
+                "/projects/12.png",
+                "/projects/13.png",
+                "/projects/14.png",
+                "/projects/15.png",
+                "/projects/16.png",
+                "/projects/17.png",
+                "/projects/18.png",
+                "/projects/19.png",
+                "/projects/20.png",
+                "/projects/21.png",
+                "/projects/22.png",
+                "/projects/23.png"
+            ],
+            tech: ["ReactNative", "TypeScript", "Tailwind CSS", "Vite"],
+            github: "https://github.com/keshav0710/HabitOS",
+            category: "Web Development"
+        },
     ];
 
     return (

@@ -40,8 +40,8 @@ const Projects = () => {
         'Cross-platform habit tracker with integrated focus timer and real-time sync. Built custom Firebase authentication and offline-first architecture. Focus timer persists in background, ensuring uninterrupted productivity sessions across devices.',
       image: '⏱️',
       tech: ['React-Native', 'Firebase', 'TypeScript'],
-      github: 'https://github.com/keshav0710',
-      demo: 'https://github.com/keshav0710',
+      github: 'https://github.com/keshav0710/HABITOS',
+      demo: 'https://github.com/keshav0710/HABITOS',
       featured: true
     },
     {
