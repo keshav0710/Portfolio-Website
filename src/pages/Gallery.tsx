@@ -43,22 +43,23 @@ const Gallery = () => {
             title: "HabitOS",
             description: "Cross-platform habit tracker with integrated focus timer and real-time sync. Built custom Firebase authentication and offline-first architecture. Focus timer persists in background, ensuring uninterrupted productivity sessions across devices.",
             screenshots: [
-                "/projects/12.png",
-                "/projects/13.png",
-                "/projects/14.png",
-                "/projects/15.png",
-                "/projects/16.png",
-                "/projects/17.png",
-                "/projects/18.png",
-                "/projects/19.png",
-                "/projects/20.png",
-                "/projects/21.png",
-                "/projects/22.png",
-                "/projects/23.png"
+                "/projects/12.jpeg",
+                "/projects/13.jpeg",
+                "/projects/14.jpeg",
+                "/projects/15.jpeg",
+                "/projects/16.jpeg",
+                "/projects/17.jpeg",
+                "/projects/18.jpeg",
+                "/projects/19.jpeg",
+                "/projects/20.jpeg",
+                "/projects/21.jpeg",
+                "/projects/22.jpeg",
+                "/projects/23.jpeg"
             ],
             tech: ["ReactNative", "TypeScript", "Tailwind CSS", "Vite"],
             github: "https://github.com/keshav0710/HabitOS",
-            category: "Web Development"
+            demo: "https://habitos.vercel.app/",
+            category: "Mobile Development"
         },
     ];
 
@@ -121,7 +122,7 @@ const Gallery = () => {
                                                     style={{
                                                         width: '100%',
                                                         height: '100%',
-                                                        objectFit: 'cover',
+                                                        objectFit: 'contain',
                                                         borderRadius: '0.5rem'
                                                     }}
                                                 />
